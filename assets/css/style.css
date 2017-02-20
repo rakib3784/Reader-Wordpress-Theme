@@ -1,0 +1,365 @@
+
+
+
+/* Shopaholic - e-Commerce HTML5 Template by Jewel Theme
+* ---------------------------------------------------------------------- 
+* Theme Name: Shopaholic - e-Commerce HTML5 Template
+* Theme URI: https://jeweltheme.com/
+* Author: Jewel Theme
+* Author URI: https://jeweltheme.com/
+* Description: Shopaholic - e-Commerce HTML5 Template
+* Version: 1.0.0
+* License: GNU General Public License v2 or later
+* License URI: http://www.gnu.org/licenses/gpl-2.0.html
+* ----------------------------------------------------------------------*/
+
+
+/* Import Google Font
+------------------------------------------------------------------------*/ 
+
+@import 'https://fonts.googleapis.com/css?family=Arvo:700|Roboto:400,500,700';
+
+
+/* Default Style / Reset
+------------------------------------------------------------------------*/ 
+
+html,
+body {
+	font-family: 'Roboto', 'Arvo', serif, sans-serif;
+	font-size: 16px;
+	line-height: 1;
+	overflow-x: hidden;
+	margin: 0 !important;
+	padding: 0 !important;
+	position: relative;
+
+	-webkit-font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+
+	text-rendering: optimizeLegibility !important;
+
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+
+	-webkit-overflow-scrolling: touch;
+	-moz-overflow-scrolling: touch;
+	-ms-overflow-scrolling: touch;
+	-o-overflow-scrolling: touch;
+	overflow-scrolling: touch;
+}
+section {
+	overflow: hidden;
+}
+
+
+article,
+aside,
+details, 
+figcaption,
+figure,
+footer,
+header,
+main, 
+menu,
+nav,
+section,
+summary { 
+	display: block;
+}
+section {
+	clear: both;
+}
+
+audio,
+canvas,
+progress,
+video {
+	display: inline-block;
+}
+
+audio:not([controls]) {
+	display: none;
+	height: 0;
+}
+
+progress {
+	vertical-align: baseline;
+}
+
+template, 
+[hidden] {
+	display: none;
+}
+
+p {	
+	font-family: 'Roboto';
+	margin: 0;
+}
+
+a {
+	background-color: transparent; 
+	-webkit-text-decoration-skip: objects; 
+
+	-webkit-transition: all .25s ease;
+	-moz-transition: all .25s ease;
+	-ms-transition: all .25s ease;
+	-o-transition: all .25s ease;
+	transition: all .25s ease;
+}
+
+a:active,
+a:hover,
+a:focus {
+	color: #c0392b;
+	outline-width: 0;
+	text-decoration: none !important;
+}
+
+.btn {
+	border: none;
+	border-radius: 0;
+	padding: 0;
+}
+
+abbr[title] {
+	border-bottom: none; 
+	text-decoration: underline; 
+	text-decoration: underline dotted; 
+}
+
+b,
+strong {
+	font-weight: inherit;
+	font-weight: bolder;
+}
+
+dfn {
+	font-style: italic;
+}
+
+h1 {
+	color: #333;
+	font-family: 'Arvo';
+	font-size: 55px;
+	margin: 0;
+}
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: #333;
+	font-family: 'Arvo';
+	font-weight: 700;
+	margin: 0;
+	padding: 0;
+
+	-webkit-transition: all .25s ease;
+	-moz-transition: all .25s ease;
+	-ms-transition: all .25s ease;
+	-o-transition: all .25s ease;
+	transition: all .25s ease;
+}
+h2 {
+	font-size: 22px;
+}
+h3 {
+	font-size: 18px;
+}
+h4 {
+	font-size: 16px;
+}
+h5 {
+	font-size: 14px;
+}
+h6 {
+	font-size: 12px;
+}
+mark {
+	background-color: #ff0;
+	color: #000;
+}
+
+small {
+	font-size: 80%;
+}
+
+sub,
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sub {
+	bottom: -0.25em;
+}
+
+sup {
+	top: -0.5em;
+}
+
+img {
+	border-style: none;
+	max-width: 100%;
+}
+
+svg:not(:root) {
+	overflow: hidden;
+}
+
+code,
+kbd,
+pre,
+samp {
+	font-family: monospace, monospace; 
+	font-size: 1em; 
+}
+
+figure {
+	margin: 1em 40px;
+}
+
+hr {
+	box-sizing: content-box; 
+	height: 0; 
+	overflow: visible; 
+}
+
+button,
+input,
+select,
+textarea {
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	-ms-border-radius: 0;
+	-o-border-radius: 0;
+	border-radius: 0;
+	
+	box-shadow: none !important;
+	font-family: 'Roboto';
+	font-size: 16px; 
+	margin: 0; 
+
+	-webkit-transition: all .25s ease;
+	-moz-transition: all .25s ease;
+	-ms-transition: all .25s ease;
+	-o-transition: all .25s ease;
+	transition: all .25s ease;
+}
+
+optgroup {
+	font-weight: bold;
+}
+
+button,
+input { 
+	overflow: visible;
+}
+
+button,
+select {
+	text-transform: none;
+}
+button:focus,
+input:focus,
+textarea:focus {
+	border: none;
+	outline: 0 !important;
+	outline-offset: 0 !important;
+}
+
+button,
+html [type="button"], 
+[type="reset"],
+[type="submit"] {
+	-webkit-appearance: button; 
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+	border-style: none;
+	padding: 0;
+}
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+	outline: 1px dotted ButtonText;
+}
+
+legend {
+	box-sizing: border-box; 
+	color: inherit;
+	display: table;
+	max-width: 100%; 
+	padding: 0; 
+	white-space: normal; 
+}
+
+textarea {
+	overflow: auto;
+}
+button:focus {
+	border: none;
+	outline: 0;
+}
+
+[type="checkbox"],
+[type="radio"] {
+	box-sizing: border-box;
+	padding: 0; 
+}
+
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+	height: auto;
+}
+
+
+[type="search"] {
+	-webkit-appearance: textfield; 
+	outline-offset: -2px; 
+}
+
+
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+
+
+::-webkit-input-placeholder {
+	color: #000;
+	opacity: 0.54;
+	font-size: 15px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+::-webkit-file-upload-button {
+	-webkit-appearance: button; 
+	font: #000; 
+	font-size: 15px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	text-indent: 1px;
+	text-overflow: '';
+}
+
+iframe,
+audio,
+video {
+	border: none !important;
+	box-shadow: none !important;
+	width: 100%;
+}
